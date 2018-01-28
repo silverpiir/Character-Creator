@@ -26,6 +26,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
     </div>
     <p><a href="insert.php" class="btn btn-primary">Add a character</a></p>
     <p><a href="include/viewcharacters.php" class="btn btn-primary">View your characters</a></p>
+    <p><a href="include/viewtest.php" class="btn btn-primary">TEST View your characters</a></p>
     <p><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></p>
 </body>
 </html>

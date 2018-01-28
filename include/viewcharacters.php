@@ -1,25 +1,4 @@
 <?php
-    /*
-    include_once '../db/config.php';
-    session_start();
-        //$mysqli = 
-        
-        $userid = $_SESSION['username'];
-        
-        //table set to test!!
-        if($stmt = $mysqli->prepare('SELECT * FROM rpg.characters_test WHERE userid = ?;')){
-            $stmt->bind_param('s',$userid);
-            if($stmt->execute()){
-                header("Refresh: 0; url=../success.php");  //Todo = suunamine õnnestumise lehele, kus logout, add another, vaata olemasolevaid jne.
-                exit();
-            }else{
-                die('Oops. Something went wrong.'. mysqli_error($mysqli));
-                header('../welcome.php');
-            }
-        }
-    $mysqli->close();
-    return $response;
-    */
     include_once '../db/config.php';
     session_start();
     
