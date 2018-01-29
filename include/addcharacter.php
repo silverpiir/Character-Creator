@@ -8,16 +8,17 @@
         $gender = $_POST['gender'];
         $strength = $_POST['strength'];
         $dexterity = $_POST['dexterity'];
+        $constitution = $_POST['constitution'];
         $intelligence = $_POST['intelligence'];
         $wisdom = $_POST['wisdom'];
         $charisma = $_POST['charisma'];
-        $luck = $_POST['luck'];
+        
         $userid = $_SESSION['username'];
         
         //table set to test!!
-        if($stmt = $mysqli->prepare('INSERT INTO rpg.characters_test(name,class,race,gender,strength,dexterity,intelligence,wisdom,charisma,luck,userid)
+        if($stmt = $mysqli->prepare('INSERT INTO rpg.characters_test(name,class,race,gender,strength,constitution,dexterity,intelligence,wisdom,charisma,userid)
         VALUES(?,?,?,?,?,?,?,?,?,?,?);')){
-            $stmt->bind_param('ssssiiiiiis',$name,$class,$race,$gender,$strength,$dexterity,$intelligence,$wisdom,$charisma,$luck,$userid);
+            $stmt->bind_param('ssssiiiiiis',$name,$class,$race,$gender,$strength,$dexterity,$constitution,$intelligence,$wisdom,$charisma,$userid);
             if($stmt->execute()){
                 header("Refresh: 0; url=../success.php");  //Todo = suunamine õnnestumise lehele, kus logout, add another, vaata olemasolevaid jne.
                 exit();

@@ -21,13 +21,13 @@ CREATE TABLE IF NOT EXISTS rpg.characters_test(
     class VARCHAR(30),
     race VARCHAR(30),
     gender CHAR(1),
-    strength INT(3),
-    dexterity INT(3),
-    intelligence INT(3),
-    wisdom INT(3),
-    charisma INT(3),
-    luck INT(3),
-    userid INT
+    strength INT(2),
+    dexterity INT(2),
+    constitution INT(2),
+    intelligence INT(2),
+    wisdom INT(2),
+    charisma INT(2),
+    userid varchar(50)
 );
 
 CREATE TABLE IF NOT EXISTS rpg.users(

@@ -2,7 +2,7 @@
     include_once '../db/config.php';
     session_start();
     
-    $query = 'SELECT name,class,race,gender,strength,dexterity,intelligence,wisdom,charisma,luck FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
+    $query = 'SELECT id,name,class,race,gender,strength,dexterity,constitution,intelligence,wisdom,charisma FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
     //$result = mysqli_query($db,$query);
     $result = $mysqli->query($query);
     //var_dump($result);
@@ -18,11 +18,11 @@
         foreach($row as $field){
             echo '<td>'. $field .'</td>';
         }
-        
+        echo '<td><a href="delete.php?character='. $row['id'] .'">DELETE</a></td>';
         echo '</tr>';
-        
     }
     echo '</table>';
+    
     $mysqli->close();
 
 ?>

@@ -2,7 +2,7 @@
     include_once '../db/config.php';
     session_start();
     
-    $query = 'SELECT name,class,race,gender,strength,dexterity,intelligence,wisdom,charisma,luck FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
+    $query = 'SELECT name,class,race,gender,strength,dexterity,constitution,intelligence,wisdom,charisma FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
     $result = $mysqli->query($query);
     
     if (!$result) {
@@ -24,10 +24,10 @@
         echo '<tr><td>'.'Gender: '.'</td><td>'. $row["gender"] .'</td></tr>';
         echo '<tr><td>'.'Strength: '.'</td><td>'. $row["strength"] .'</td></tr>';
         echo '<tr><td>'.'Dexterity: '.'</td><td>'. $row["dexterity"] .'</td></tr>';
+        echo '<tr><td>'.'Constitution: '.'</td><td>'. $row["constitution"] .'</td></tr>';
         echo '<tr><td>'.'Intelligence: '.'</td><td>'. $row["intelligence"] .'</td></tr>';
         echo '<tr><td>'.'Wisdom: '.'</td><td>'. $row["wisdom"] .'</td></tr>';
         echo '<tr><td>'.'Charisma: '.'</td><td>'. $row["charisma"] .'</td></tr>';
-        echo '<tr><td>'.'Luck: '.'</td><td>'. $row["luck"] .'</td></tr>';
         echo '</table>';
         echo '</div>';
         echo '<br>';

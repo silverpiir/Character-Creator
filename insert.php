@@ -57,6 +57,11 @@
                     <input type="text" name="dexterity" class="form-control" value=""/>
                 </div>
                 
+                <label class="col-sm-2 control-label">Constitution: </label>
+                <div class="col-sm-10">
+                    <input type="text" name="constitution" class="form-control" value=""/>
+                </div>
+                
                 <label class="col-sm-2 control-label">Intelligence: </label>
                 <div class="col-sm-10">
                     <input type="text" name="intelligence" class="form-control" value=""/>
@@ -70,14 +75,8 @@
                 <label class="col-sm-2 control-label">Charisma: </label>
                 <div class="col-sm-10">
                     <input type="text" name="charisma" class="form-control" value=""/>
-                </div>
-                
-                <label class="col-sm-2 control-label">Luck: </label>
-                <div class="col-sm-10">
-                    <input type="text" name="luck" class="form-control" value=""/>
                     <input class="col-sm-2" type="submit" value="Submit"/>
                 </div>
-                
             </div>
         </form>
         <a href="welcome.php">Return</a>
