@@ -18,7 +18,7 @@
         foreach($row as $field){
             echo '<td>'. $field .'</td>';
         }
-        echo '<td><a href="delete.php?character='. $row['id'] .'">DELETE</a></td>';
+        echo '<td><a href="delete.php?character='. $row['id'] .'">DELETE</a> / <a href="modify_landing.php?character='. $row['id'] .'">MODIFY</a></td>';
         echo '</tr>';
     }
     echo '</table>';

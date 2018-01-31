@@ -42,3 +42,15 @@
 [28-Jan-2018 10:00:53 UTC] PHP Stack trace:
 [28-Jan-2018 10:00:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/include/viewcharacters.php:0
 [29-Jan-2018 18:02:07 UTC] PHP Parse error:  syntax error, unexpected 'UTF' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/include/viewcharacters.php on line 34
+[31-Jan-2018 16:57:44 UTC] PHP Warning:  require_once(include/dbconf.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/include/modify.php on line 2
+[31-Jan-2018 16:57:44 UTC] PHP Stack trace:
+[31-Jan-2018 16:57:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/include/modify.php:0
+[31-Jan-2018 16:57:44 UTC] PHP Fatal error:  require_once(): Failed opening required 'include/dbconf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/include/modify.php on line 2
+[31-Jan-2018 16:57:44 UTC] PHP Stack trace:
+[31-Jan-2018 16:57:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/include/modify.php:0
+[31-Jan-2018 17:07:24 UTC] PHP Warning:  require_once(../db/conf.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/include/modify_landing.php on line 2
+[31-Jan-2018 17:07:24 UTC] PHP Stack trace:
+[31-Jan-2018 17:07:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/include/modify_landing.php:0
+[31-Jan-2018 17:07:24 UTC] PHP Fatal error:  require_once(): Failed opening required '../db/conf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/include/modify_landing.php on line 2
+[31-Jan-2018 17:07:24 UTC] PHP Stack trace:
+[31-Jan-2018 17:07:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/include/modify_landing.php:0
