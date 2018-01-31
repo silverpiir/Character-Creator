@@ -12,8 +12,6 @@
     $intelligence = $_POST['intelligence'];
     $wisdom = $_POST['wisdom'];
     $charisma = $_POST['charisma'];
-    
-    //$hashedpwd = hash('sha512',$password);
 
     if($query = $mysqli->prepare('UPDATE 
     rpg.characters_test SET name=?,class=?,race=?,gender=?,strength=?,dexterity=?,constitution=?,intelligence=?,wisdom=?,charisma=?
@@ -26,7 +24,6 @@
         }else{
             echo "Error: ". $query->error;
         }
-        
     }
     else{
         echo "Error with prepare()". mysqli_error($mysqli);
