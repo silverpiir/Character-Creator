@@ -75,7 +75,7 @@
                 <label class="col-sm-2 control-label">Charisma: </label>
                 <div class="col-sm-10">
                     <input type="text" name="charisma" class="form-control" value=""/>
-                    <input class="col-sm-2" type="submit" value="Submit"/>
+                    <input class="col-sm-2 btn btn-primary" type="submit" value="Submit"/>
                 </div>
             </div>
         </form>

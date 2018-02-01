@@ -15,14 +15,15 @@
     }
 ?>
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Welcome</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
         <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
+        body{ font: 14px sans-serif;}
+        .wrapper{ width: 350px; padding: 20px; }
         </style>
     </head>
     <body>
@@ -92,7 +93,7 @@
                 <label class="col-sm-2 control-label">Charisma: </label>
                 <div class="col-sm-10">
                     <input type="text" name="charisma" class="form-control" value="<?php echo $character['charisma'] ?>"/>
-                    <input class="col-sm-2" type="submit" value="Modify"/>
+                    <input class="col-sm-2 btn btn-primary" type="submit" value="Modify"/>
                 </div>
             </div>
             

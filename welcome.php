@@ -21,8 +21,7 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 </head>
 <body>
     <div class="page-header">
-        <h1>Hi, <b><?php echo $_SESSION['username']; echo $id; ?></b>. Welcome to our site.</h1>
-        <h3> ?></h3>
+        <h1>Hi, <b><?php echo $_SESSION['username'];?></b>. Welcome to Character Creator.</h1>
     </div>
     <p><a href="insert.php" class="btn btn-primary">Add a character</a></p>
     <p><a href="include/viewcharacters.php" class="btn btn-primary">View your characters</a></p>

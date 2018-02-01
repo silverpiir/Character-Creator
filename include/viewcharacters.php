@@ -3,9 +3,7 @@
     session_start();
     
     $query = 'SELECT id,name,class,race,gender,strength,dexterity,constitution,intelligence,wisdom,charisma FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
-    //$result = mysqli_query($db,$query);
     $result = $mysqli->query($query);
-    //var_dump($result);
     
     echo '<table class="table"><tr>';
     while($thfield = $result->fetch_field()){
