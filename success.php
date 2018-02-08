@@ -1,6 +1,3 @@
-<?php
-    echo 'you dun it';
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +9,8 @@
         </style>
     </head>
     <body>
-        <a href="welcome.php">Return</a>
+        <div>
+        <p></p><a href="welcome.php">Success! Return to main menu</a></p>
+        </div>
     </body>
 </html>

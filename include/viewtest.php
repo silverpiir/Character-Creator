@@ -17,17 +17,17 @@
     
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<div>';
-        echo '<table>';
-        echo '<tr><td>'.'Name:' .'</td><td>'. $row["name"] .'</td></tr>';
-        echo '<tr><td>'.'Class:'.'</td><td>'. $row["class"] .'</td></tr>';
-        echo '<tr><td>'.'Race: '.'</td><td>'. $row["race"] .'</td></tr>';
-        echo '<tr><td>'.'Gender: '.'</td><td>'. $row["gender"] .'</td></tr>';
-        echo '<tr><td>'.'Strength: '.'</td><td>'. $row["strength"] .'</td></tr>';
-        echo '<tr><td>'.'Dexterity: '.'</td><td>'. $row["dexterity"] .'</td></tr>';
-        echo '<tr><td>'.'Constitution: '.'</td><td>'. $row["constitution"] .'</td></tr>';
-        echo '<tr><td>'.'Intelligence: '.'</td><td>'. $row["intelligence"] .'</td></tr>';
-        echo '<tr><td>'.'Wisdom: '.'</td><td>'. $row["wisdom"] .'</td></tr>';
-        echo '<tr><td>'.'Charisma: '.'</td><td>'. $row["charisma"] .'</td></tr>';
+        echo '<table cellspacing="100">';
+        echo '<tr><td class="col-md-6">'.'Name:' .'</td><td>'. $row["name"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Class:'.'</td><td>'. $row["class"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Race: '.'</td><td>'. $row["race"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Gender: '.'</td><td>'. $row["gender"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Strength: '.'</td><td>'. $row["strength"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Dexterity: '.'</td><td>'. $row["dexterity"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Constitution: '.'</td><td>'. $row["constitution"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Intelligence: '.'</td><td>'. $row["intelligence"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Wisdom: '.'</td><td>'. $row["wisdom"] .'</td></tr>';
+        echo '<tr><td class="col-md-6">'.'Charisma: '.'</td><td>'. $row["charisma"] .'</td></tr>';
         echo '</table>';
         echo '</div>';
         echo '<br>';
