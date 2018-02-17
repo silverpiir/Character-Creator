@@ -1,0 +1,84 @@
+body{
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../img/bg2.jpg");
+    background-attachment: fixed;
+}
+.container{
+    height: auto;
+    width: 70%;
+    background: rgba(222, 222, 222, 0.9);
+}
+.container-relative{
+    position: relative;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  background-color: #3F51B5;
+  color: #fff;
+}
+.section-content {
+  flex: 1;
+}
+.footer {
+  background-color: #FFC107;
+  color: #333;
+}
+
+.minicontainer{
+    margin: 0 auto;
+    width: 30%;
+    font-size: x-large;
+}
+
+
+.welcome-options{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+.form-width{
+    width: 30%;
+    margin: 0 auto;
+}
+.form-group{
+    margin: 40px 0 0 0;
+}
+.buttons{
+    width: 200px;
+}
+.buttons-bottom{
+    margin: 100px 0;
+}
+.centering{
+    text-align: center;
+}
+.heading{
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+.h1margin{
+    margin: 20% 0 0 0;
+}
+
+hr{
+    background-color: #333;
+    height: 1px;
+    border: 0;
+}
+
+.tableview{
+
+    table-layout: fixed;
+    width: 50%;
+}
+.tdview{
+    width: 200px;
+}

@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Character Database</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="../css/custom.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+        <style type="text/css">
+            body{text-align: center; }
+        </style>
+    </head>
+    <body>
+        <div class="container flex-container">
+            <div class="section-content">
+                <p><h1 class="heading">This is your character database.</h1></p>
+                <p><h2>WARNING! Changes made here are PERMANENT!</h2></p>
+                <br>
+    </body>
+</html>
+
 <?php
     include_once '../db/config.php';
     session_start();
@@ -16,26 +37,13 @@
         foreach($row as $field){
             echo '<td>'. $field .'</td>';
         }
-        echo '<td><a href="delete.php?character='. $row['id'] .'">DELETE</a> / <a href="modify_landing.php?character='. $row['id'] .'">MODIFY</a></td>';
+        echo '<td><a href="modify_landing.php?character='. $row['id'] .'">MODIFY</a> / <a href="delete.php?character='. $row['id'] .'">DELETE</a></td>';
         echo '</tr>';
     }
-    echo '</table>';
+    echo '</table>
+        <p><a href="../welcome.php" class="buttons buttons-bottom btn btn-primary">Return</a></p>
+        </div>
+        </div>';
     
     $mysqli->close();
-
 ?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Welcome</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-        <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
-        </style>
-    </head>
-    <body>
-        <a href="../welcome.php">Return</a>
-    </body>
-</html>

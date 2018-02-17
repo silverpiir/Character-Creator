@@ -1,8 +1,6 @@
 <?php
     require_once '../db/config.php';
     
-    //$character_id = $query = 'SELECT id FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
-    
     $character_id = $_REQUEST['character'];
     $character = array();
     if($query = $mysqli->prepare('
@@ -21,10 +19,8 @@
         <meta charset="UTF-8">
         <title>Welcome</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-        <style type="text/css">
-        body{ font: 14px sans-serif;}
-        .wrapper{ width: 350px; padding: 20px; }
-        </style>
+        <link rel="stylesheet" href="../css/custom.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
     </head>
     <body>
         

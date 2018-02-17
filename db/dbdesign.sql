@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS rpg.characters(
 
 CREATE TABLE IF NOT EXISTS rpg.characters_test(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(30),
+    name VARCHAR(16),
     class VARCHAR(30),
     race VARCHAR(30),
     gender CHAR(1),

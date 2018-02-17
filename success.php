@@ -4,13 +4,18 @@
         <meta charset="UTF-8">
         <title>Welcome</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
         <style type="text/css">
-        body{ font: 14px sans-serif; text-align: center; }
+            body{text-align: center; }
         </style>
     </head>
     <body>
-        <div>
-        <p></p><a href="welcome.php">Success! Return to main menu</a></p>
+        <div class="container container-relative flex-container">
+            <div class="section-content">
+                <p><h1 class="h1margin">Success!</h1>
+                <a class="buttons buttons-bottom btn btn-primary" href="welcome.php">Return</a></p>
+            </div>
         </div>
     </body>
 </html>
