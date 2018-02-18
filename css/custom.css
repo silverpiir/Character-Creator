@@ -15,28 +15,26 @@ body{
 
 
 .flex-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .header {
-  background-color: #3F51B5;
-  color: #fff;
+    background-color: #3F51B5;
+    color: #fff;
 }
 .section-content {
-  flex: 1;
+    flex: 1;
 }
 .footer {
-  background-color: #FFC107;
-  color: #333;
+    bottom: 0;
 }
-
-.minicontainer{
-    margin: 0 auto;
-    width: 30%;
-    font-size: x-large;
+.footer a{
+    margin: 0 20px;
 }
-
+.footer a:hover{
+    opacity: 0.8;
+}
 
 .welcome-options{
     width: 100%;
@@ -84,4 +82,22 @@ hr{
 }
 .tdview{
     width: 200px;
+}
+
+.portrait{
+    float: left;
+    width: 45%;
+    height: auto;
+}
+
+.minicontainer{
+    margin: 0 auto;
+    width: 5vw;
+    font-size: x-large;
+}
+.portrait img{
+    width: 200px;
+    height: auto;
+    margin: 0 5% 0 0;
+    float: right;
 }

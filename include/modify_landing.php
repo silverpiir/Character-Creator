@@ -112,10 +112,18 @@
                 </div>
                 <div class="centering">
                     <br><input class="buttons btn btn-primary" type="submit" value="Modify"/>
-                    <br><a class="buttons buttons-top btn btn-primary" href="../welcome.php">Return</a>
+                    <br><a class="buttons buttons-top btn btn-primary" href="viewcharacters.php">Return</a>
                 </div>
                 </form>
             </div>
+            <div class="footer centering">
+            <p>
+                <a href="https://github.com/silverpiir" target="_blank"><img src="../img/github.png" /></a>
+                <a href="https://www.linkedin.com/in/silver-piir-b1a149146/" target="_blank"><img src="../img/linkedin-logo.png" /></a>
+                <a href="mailto:silverpiir@gmail.com"><img src="../img/mail.png" /></a>
+            </p>
+            <p>Copyright © 2018 Silver Piir.</p>
+        </div>
         </div>    
     </body>
 </html>

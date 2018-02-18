@@ -10,9 +10,9 @@
         'DELETE FROM rpg.characters_test WHERE id = ?;')){
         $query->bind_param('i',intval($character_id));
         $query->execute();
-        header('Location: ../success.php');
+        header('Location: ../success2.php');
     }else{
-        die('Ei suutnud kustutada:'. mysqli_error($mysqli));
+        die('Could not delete:'. mysqli_error($mysqli));
     }
     
     $mysqli->close();

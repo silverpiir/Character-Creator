@@ -44,6 +44,6 @@
         </style>
     </head>
     <body>
-        <a href="../welcome.php">Return</a>
+
     </body>
 </html>

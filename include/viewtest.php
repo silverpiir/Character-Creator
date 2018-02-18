@@ -29,8 +29,93 @@
         exit;
     }
     
+    $portrait;
+    
+    
     while ($row = mysqli_fetch_assoc($result)) {
+        if($row["race"] == "Aasimar"){
+            $portrait = "../img/portraits/aasimar.png";
+        }
+        switch($row["race"]){
+            case "Aasimar":
+                $portrait = "../img/portraits/aasimar.png";
+                break;
+            case "Bugbear":
+                $portrait = "../img/portraits/bugbear.png";
+                break;
+            case "Dragonborn":
+                $portrait = "../img/portraits/dragonborn.png";
+                break;
+            case "Dwarf":
+                $portrait = "../img/portraits/dwarf.png";
+                break;
+            case "Elf":
+                $portrait = "../img/portraits/elf.png";
+                break;
+            case "Firbolg":
+                $portrait = "../img/portraits/firbolg.png";
+                break;
+            case "Genasi":
+                $portrait = "../img/portraits/genasi.png";
+                break;
+            case "Gnome":
+                $portrait = "../img/portraits/gnome.png";
+                break;
+            case "Goblin":
+                $portrait = "../img/portraits/goblin.png";
+                break;
+            case "Goliath":
+                $portrait = "../img/portraits/goliath.png";
+                break;
+            case "Half-Elf":
+                $portrait = "../img/portraits/halfelf.png";
+                break;
+            case "Half-Orc":
+                $portrait = "../img/portraits/halforc.png";
+                break;
+            case "Halfling":
+                $portrait = "../img/portraits/halfling.png";
+                break;
+            case "Hobgoblin":
+                $portrait = "../img/portraits/hobgoblin.png";
+                break;
+            case "Human":
+                $portrait = "../img/portraits/human.png";
+                break;
+            case "Kenku":
+                $portrait = "../img/portraits/kenku.png";
+                break;
+            case "Kobold":
+                $portrait = "../img/portraits/kobold.png";
+                break;
+            case "Lizardfolk":
+                $portrait = "../img/portraits/lizardfolk.png";
+                break;
+            case "Orc":
+                $portrait = "../img/portraits/orc.png";
+                break;
+            case "Tabaxi":
+                $portrait = "../img/portraits/tabaxi.png";
+                break;
+            case "Tiefling":
+                $portrait = "../img/portraits/tiefling.png";
+                break;
+            case "Tortle":
+                $portrait = "../img/portraits/tortle.png";
+                break;
+            case "Triton":
+                $portrait = "../img/portraits/triton.png";
+                break;
+            case "Yuan-Ti Pureblood":
+                $portrait = "../img/portraits/yuantipureblood.png";
+                break;
+            default:
+                break;
+        }
+        echo '<div class="portrait"><img src="'.$portrait.'"/></div>';
         echo '<div class="minicontainer">';
+        
+        
         echo '<table class="tableview" cellspacing="100">';
         echo '<tr><td class="tdview">'.'Name:' .'</td><td class="tdview">'. $row["name"] .'</td></tr>';
         echo '<tr><td class="tdview">'.'Class:'.'</td><td class="tdview">'. $row["class"] .'</td></tr>';
@@ -51,6 +136,14 @@
 ?>
                 <div class="centering"><a class="buttons buttons-bottom btn btn-primary" href="../welcome.php">Return</a></div>
             </div>
+            <div class="footer centering">
+            <p>
+                <a href="https://github.com/silverpiir" target="_blank"><img src="../img/github.png" /></a>
+                <a href="https://www.linkedin.com/in/silver-piir-b1a149146/" target="_blank"><img src="../img/linkedin-logo.png" /></a>
+                <a href="mailto:silverpiir@gmail.com"><img src="../img/mail.png" /></a>
+            </p>
+            <p>Copyright © 2018 Silver Piir.</p>
+        </div>
         </div>
     </body>
 </html>

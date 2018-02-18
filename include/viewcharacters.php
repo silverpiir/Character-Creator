@@ -23,14 +23,15 @@
     include_once '../db/config.php';
     session_start();
     
+    //table set to test!
     $query = 'SELECT id,name,class,race,gender,strength,dexterity,constitution,intelligence,wisdom,charisma FROM rpg.characters_test WHERE userid = "'. $_SESSION['username'] .'";';
     $result = $mysqli->query($query);
     
     echo '<table class="table"><tr>';
     while($thfield = $result->fetch_field()){
-        echo '<th scope="col">'. ucfirst($thfield->name) .'</th>';
+        echo '<th class="centering" scope="col">'. ucfirst($thfield->name) .'</th>';
     }
-    echo '<th>Action</th>';
+    echo '<th class="centering">Action</th>';
     echo '</tr>';
     while($row = $result->fetch_assoc()){
         echo '<tr scope="row">';
@@ -42,6 +43,14 @@
     }
     echo '</table>
         <p><a href="../welcome.php" class="buttons buttons-bottom btn btn-primary">Return</a></p>
+        </div>
+        <div class="footer">
+            <p>
+                <a href="https://github.com/silverpiir" target="_blank"><img src="../img/github.png" /></a>
+                <a href="https://www.linkedin.com/in/silver-piir-b1a149146/" target="_blank"><img src="../img/linkedin-logo.png" /></a>
+                <a href="mailto:silverpiir@gmail.com"><img src="../img/mail.png" /></a>
+            </p>
+            <p>Copyright © 2018 Silver Piir.</p>
         </div>
         </div>';
     
