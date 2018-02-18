@@ -6,9 +6,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
         <link rel="stylesheet" href="css/custom.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-        <style type="text/css">
-            body{text-align: center; }
-        </style>
     </head>
     <body>
         <div class="container container-relative flex-container">
@@ -20,7 +17,7 @@
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Name: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="name" class="form-control" value=""/>
+                            <input type="text" name="name" maxlength="16" class="form-control" value=""/>
                         </div>
                     </div>
                     
@@ -39,7 +36,6 @@
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Race: </label>
                         <div class="col-sm-8">
-                            <!--<input type="text" name="race" class="form-control" value=""/>-->
                             <select class="form-control" name="race">
                                 <option value="Human">Human</option>
                                 <option value="Orc">Orc</option>
@@ -52,7 +48,6 @@
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Gender: </label>
                         <div class="col-sm-8">
-                            <!--<input type="text" name="gender" class="form-control" value=""/>-->
                             <div style="display:inline-block"><input class="form-control" type="radio" name="gender" value="M" checked> Male</div>
                             <div style="display:inline-block"><input class="form-control" type="radio" name="gender" value="F"> Female</div>
                         </div>
@@ -61,49 +56,49 @@
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Strength: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="strength" class="form-control" value=""/>
+                            <input type="text" name="strength" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                     
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Dexterity: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="dexterity" class="form-control" value=""/>
+                            <input type="text" name="dexterity" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                     
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Constitution: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="constitution" class="form-control" value=""/>
+                            <input type="text" name="constitution" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                     
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Intelligence: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="intelligence" class="form-control" value=""/>
+                            <input type="text" name="intelligence" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                     
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Wisdom: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="wisdom" class="form-control" value=""/>
+                            <input type="text" name="wisdom" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                     
                     <div class="form-width">
                         <label class="col-sm-4 control-label">Charisma: </label>
                         <div class="col-sm-8">
-                            <input type="text" name="charisma" class="form-control" value=""/>
+                            <input type="text" name="charisma" maxlength="2" class="form-control" value=""/>
                         </div>
                     </div>
                 </div>
-                
-                <br><input class="buttons btn btn-primary" type="submit" value="Submit"/>
-                <br><a class="buttons buttons-bottom btn btn-primary" href="welcome.php">Return</a>
-                
+                <div class="centering">
+                    <br><input class="buttons btn btn-primary" type="submit" value="Submit"/>
+                    <br><a class="buttons buttons-top btn btn-primary" href="welcome.php">Return</a>
+                </div>
                 </form>
             </div>
         </div>

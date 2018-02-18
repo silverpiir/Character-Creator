@@ -14,7 +14,7 @@
         <div class="container container-relative flex-container">
             <div class="section-content">
                 <p><h1 class="h1margin">Success!</h1>
-                <a class="buttons buttons-bottom btn btn-primary" href="welcome.php">Return</a></p>
+                <a class="buttons buttons-top btn btn-primary" href="welcome.php">Return</a></p>
             </div>
         </div>
     </body>

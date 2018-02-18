@@ -37,7 +37,7 @@
         foreach($row as $field){
             echo '<td>'. $field .'</td>';
         }
-        echo '<td><a href="modify_landing.php?character='. $row['id'] .'">MODIFY</a> / <a href="delete.php?character='. $row['id'] .'">DELETE</a></td>';
+        echo '<td><a href="modify_landing.php?character='. $row['id'] .'">MODIFY</a> / <a onclick="return confirm(\'Delete character '. $row['name'].'?\')" href="delete.php?character='. $row['id'] .'">DELETE</a></td>';
         echo '</tr>';
     }
     echo '</table>

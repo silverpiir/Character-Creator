@@ -55,7 +55,10 @@ body{
     width: 200px;
 }
 .buttons-bottom{
-    margin: 100px 0;
+    margin: 0 0 100px 0;
+}
+.buttons-top{
+    margin: 100px 0 0 0;
 }
 .centering{
     text-align: center;

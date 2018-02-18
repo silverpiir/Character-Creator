@@ -11,8 +11,6 @@
         <div class="container flex-container">
             <div class="section-content">
             <p><h1 class="heading">Here's a list of your characters:</h1><br><hr></p>
-    </body>
-</html>
 
 <?php
     include_once '../db/config.php';
@@ -50,7 +48,9 @@
     }
     
     mysqli_free_result($result);
-    echo '.<div class="centering"><a class="buttons buttons-bottom btn btn-primary" href="../welcome.php">Return</a></div>
-        </div>
-        </div>.';
 ?>
+                <div class="centering"><a class="buttons buttons-bottom btn btn-primary" href="../welcome.php">Return</a></div>
+            </div>
+        </div>
+    </body>
+</html>

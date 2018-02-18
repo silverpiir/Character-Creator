@@ -26,8 +26,8 @@
             <p><h1 class="heading">Hi, <b><?php echo $_SESSION['username'];?></b>. Welcome to Character Creator.</h1></p>
         </div>
         <div class="welcome-options">
-            <p><a href="insert.php" class="buttons btn btn-primary">Add a character</a></p>
-            <p><a href="include/viewtest.php" class="buttons btn btn-primary">View your characters</a></p>
+            <p><a href="insert.php" class="buttons btn btn-primary">Add a Character</a></p>
+            <p><a href="include/viewtest.php" class="buttons btn btn-primary">View Your Characters</a></p>
             <p><a href="include/viewcharacters.php" class="buttons btn btn-warning">Character Database</a></p>
             <br><br>
             <p><a href="logout.php" class="buttons btn btn-danger">Sign Out of Your Account</a></p>
