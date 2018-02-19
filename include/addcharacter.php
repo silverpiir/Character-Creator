@@ -20,7 +20,7 @@
     VALUES(?,?,?,?,?,?,?,?,?,?,?);')){
         $stmt->bind_param('ssssiiiiiis',$name,$class,$race,$gender,$strength,$dexterity,$constitution,$intelligence,$wisdom,$charisma,$userid);
         if($stmt->execute()){
-            header("Refresh: 0; url=../success.php");  //Todo = suunamine õnnestumise lehele, kus logout, add another, vaata olemasolevaid jne.
+            header("Refresh: 0; url=../success.php");
             exit();
         }else{
             die('Oops. Something went wrong.'. mysqli_error($mysqli));
@@ -30,3 +30,4 @@
     
     $mysqli->close();
     return $response;
+?>

@@ -1,9 +1,6 @@
 <?php 
     include_once '../db/config.php';
     
-    //session_start();
-    //var_dump($_SESSION);
-    
     $character_id = $_REQUEST['character'];
     
     if($query = $mysqli->prepare(
@@ -16,4 +13,4 @@
     }
     
     $mysqli->close();
-    
+?>

@@ -69,7 +69,7 @@
         }
         
         mysqli_close($mysqli);
-}
+    }
 ?>
  
 <!DOCTYPE html>

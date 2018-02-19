@@ -30,8 +30,6 @@
     }
     
     $portrait;
-    
-    
     while ($row = mysqli_fetch_assoc($result)) {
         if($row["race"] == "Aasimar"){
             $portrait = "../img/portraits/aasimar.png";
@@ -114,7 +112,6 @@
         }
         echo '<div class="portrait"><img src="'.$portrait.'"/></div>';
         echo '<div class="minicontainer">';
-        
         
         echo '<table class="tableview" cellspacing="100">';
         echo '<tr><td class="tdview">'.'Name:' .'</td><td class="tdview">'. $row["name"] .'</td></tr>';
