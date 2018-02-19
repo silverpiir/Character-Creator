@@ -14,5 +14,9 @@
     </ul>
 </p>
 
+<h2>Fair use:</h2>
+<p>All images are used for educational purposes.</p>
+
 <h2>Author</h2>
+
 <p>Silver Piir, 2018</p>

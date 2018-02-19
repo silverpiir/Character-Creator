@@ -12,21 +12,19 @@ body{
 .container-relative{
     position: relative;
 }
-
-
-.flex-container {
+.flex-container{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.header {
+.header{
     background-color: #3F51B5;
     color: #fff;
 }
-.section-content {
+.section-content{
     flex: 1;
 }
-.footer {
+.footer{
     bottom: 0;
 }
 .footer a{
@@ -35,7 +33,6 @@ body{
 .footer a:hover{
     opacity: 0.8;
 }
-
 .welcome-options{
     width: 100%;
     position: absolute;
@@ -68,28 +65,23 @@ body{
 .h1margin{
     margin: 20% 0 0 0;
 }
-
 hr{
     background-color: #333;
     height: 1px;
     border: 0;
 }
-
 .tableview{
-
     table-layout: fixed;
     width: 50%;
 }
 .tdview{
     width: 200px;
 }
-
 .portrait{
     float: left;
     width: 45%;
     height: auto;
 }
-
 .minicontainer{
     margin: 0 auto;
     width: 5vw;
