@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Welcome</title>
+        <title>Database</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
         <link rel="stylesheet" href="../css/custom.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
@@ -131,7 +131,7 @@
     
     mysqli_free_result($result);
 ?>
-                <div class="centering"><a class="buttons buttons-bottom btn btn-primary" href="../welcome.php">Return</a></div>
+                <div class="centering"><a class="buttons buttons-bottom btn btn-primary" href="../index.php">Return</a></div>
             </div>
             <div class="footer centering">
             <p>

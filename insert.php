@@ -127,7 +127,7 @@
                 </div>
                 <div class="centering">
                     <br><input class="buttons btn btn-primary" type="submit" value="Submit"/>
-                    <br><a class="buttons buttons-top btn btn-primary" href="welcome.php">Return</a>
+                    <br><a class="buttons buttons-top btn btn-primary" href="index.php">Return</a>
                 </div>
                 </form>
             </div>

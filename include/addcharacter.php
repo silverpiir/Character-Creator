@@ -24,7 +24,7 @@
             exit();
         }else{
             die('Oops. Something went wrong.'. mysqli_error($mysqli));
-            header('../welcome.php');
+            header('../index.php');
         }
     }
     
