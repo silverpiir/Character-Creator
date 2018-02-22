@@ -42,7 +42,7 @@
         echo '</tr>';
     }
     echo '</table>
-        <p><a href="../welcome.php" class="buttons buttons-bottom btn btn-primary">Return</a></p>
+        <p><a href="../index.php" class="buttons buttons-bottom btn btn-primary">Return</a></p>
         </div>
         <div class="footer">
             <p>
