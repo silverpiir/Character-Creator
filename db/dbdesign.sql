@@ -8,10 +8,10 @@ CREATE TABLE IF NOT EXISTS rpg.characters(
     gender CHAR(1) NOT NULL,
     strength INT(3) NOT NULL,
     dexterity INT(3) NOT NULL,
+    constitution INT(3) NOT NULL,
     intelligence INT(3) NOT NULL,
     wisdom INT(3) NOT NULL,
     charisma INT(3) NOT NULL,
-    luck INT(3) NOT NULL,
     userid INT NOT NULL
 );
 

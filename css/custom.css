@@ -6,7 +6,7 @@ body{
 }
 .container{
     height: auto;
-    width: 70%;
+    width: 82%;
     background: rgba(222, 222, 222, 0.9);
 }
 .container-relative{
@@ -69,6 +69,9 @@ hr{
     background-color: #333;
     height: 1px;
     border: 0;
+}
+.table{
+    width: 100%;
 }
 .tableview{
     table-layout: fixed;
