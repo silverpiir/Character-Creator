@@ -10,6 +10,7 @@
         <li>Stat bonuses from race and class</li>
         <li>Responsivness for screen sizes other than 1920x1080</li>
         <li>Crediting image and code snippet sources</li>
+        <li>Hide database credentials</li>
         <li>Much, much more...</li>
     </ul>
 </p>
